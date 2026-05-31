@@ -19,7 +19,7 @@ function App() {
       setLoading(true);
 
       const res = await axios.post(
-        "http://localhost:5000/upload",
+        "https://speech-to-text-clean.onrender.com/upload",
         formData
       );
 
