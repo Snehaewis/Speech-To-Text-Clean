@@ -26,7 +26,7 @@ const supabase = createClient(
 
 // Google Speech Client
 const speechClient = new speech.SpeechClient({
-  keyFilename: "./google-key.json",
+  credentials: JSON.parse(process.env.GOOGLE_APPLICATION_CREDENTIALS),
 });
 
 // Multer
